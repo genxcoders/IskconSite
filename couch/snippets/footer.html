@@ -1,0 +1,110 @@
+<!-- Social Media -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h3>
+						Connect with ISKCON
+					</h3>
+					<ul class="gxcpl-social">
+						<li>
+							<a href="#!">
+								<i class="fa fa-facebook-square fa-2x gxcpl-fb"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-twitter fa-2x gxcpl-tw"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-youtube-play fa-2x gxcpl-yt"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-linkedin fa-2x gxcpl-li"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-pinterest fa-2x gxcpl-pi"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Social Media -->
+
+		<div class="gxcpl-ptop-30"></div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-one">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4 gxcpl-text-special-left-center">
+							<h4>Address</h4>
+							<div class="gxcpl-ptop-10"></div>
+							Sri Sri Radha Gopinath Mandir,
+							<br>
+							Gate No. 2, Empress City,
+							<br>
+							Behind Empress Mall,
+							<br>
+							Gandhi Sagar, Nagpur - 440 018
+							<div class="gxcpl-ptop-10"></div>
+						</div>
+						<div class="col-md-4">
+							<img src="assets/images/iskcon-50yrs-site-logo.png" class="footer-logo">
+							<div class="gxcpl-ptop-10"></div>
+						</div>
+						<div class="col-md-4 gxcpl-text-special-right-center">
+							<h4>Other Links</h4>
+							<div class="gxcpl-ptop-10"></div>
+							<a href="#!" class="gxcpl-white-70">Events</a>
+							<br>
+							<a href="#!" class="gxcpl-white-70">Donations</a>
+							<br>
+							<a href="#!" class="gxcpl-white-70">Contact Us</a>
+							<br>
+							<a href="#!" class="gxcpl-white-70">Lifetime Membership</a>
+							<div class="gxcpl-ptop-10"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-two">
+				© International Vedic Cultural Center (IVCC) | 2017-2018
+			</div>
+		</footer>
+		<!-- Footer -->
+
+		<!-- Floating Image -->
+		<a href="#!">
+			<img class="gxcpl-floating-logo" src="assets/images/floating-iskcon-logo-2.png" alt="New Temple" title="New Temple" />
+		</a>
+		<!-- Floating Image -->
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="assets/js/jquery-2.0.0.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+		<cms:if k_template_name=='photo-gallery.php'>
+		<script type="text/javascript" src="assets/js/lightbox.js"></script>
+		<script type="text/javascript">
+			var $btns = $('.btn').click(function() {
+				if (this.id == 'all') {
+					$('#parent > div').fadeIn(450);
+				} else {
+				var $el = $('.' + this.id).fadeIn(450);
+					$('#parent > div').not($el).hide();
+				}
+				$btns.removeClass('active');
+				$(this).addClass('active');
+			})
+		</script>
+		</cms:if>
+		<!-- Scripts -->
+	</body>
+</html>
