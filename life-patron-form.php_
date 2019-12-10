@@ -1,0 +1,67 @@
+<?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='Life Patron Form' parent='_lifepatron_' clonable='1' >
+	<cms:editable name='fullname' label='Full Name' type='text' required='1' order='1' />
+	<cms:editable name='lp_email' label='Email Id' type='text' validator='email' order='2' />
+	<cms:editable name='lp_mobile' label='Mobile Number' type='text' required='1' validator='exact_len=10 | non_negative_integer' order='3' />
+</cms:template>
+	<cms:set submit_success="<cms:get_flash 'submit_success' />" />
+    <cms:if submit_success >
+    	<div class="row">
+            <div class="col-md-12">
+        		<h4>Success: Your application has been submitted.</h4>
+        	</div>
+        </div>
+    </cms:if>
+
+    <cms:form
+        masterpage=k_template_name
+        mode='create'
+        enctype='multipart/form-data'
+        method='post'
+        anchor='0'
+        >
+
+
+		<div class="gxcpl-card-container">
+			<div class="gxcpl-card-header">
+				Apply Now for Membership
+			</div>
+			<div class="gxcpl-card-body">
+				<div class="gxcpl-ptop-10"></div>
+				<div class="row">
+					<div class="col-md-3 col-sm-12 col-xs-12" style="line-height: 34px;">
+						Full Name
+						<div class="gxcpl-ptop-10"></div>
+					</div>
+					<div class="col-md-9 col-sm-12 col-xs-12">
+						<cms:input name="fullname" type="bound" class="form-control" />
+						<div class="gxcpl-ptop-10"></div>
+					</div>
+
+					<div class="col-md-3 col-sm-12 col-xs-12" style="line-height: 34px;">
+						Email Id
+						<div class="gxcpl-ptop-10"></div>
+					</div>
+					<div class="col-md-9 col-sm-12 col-xs-12">
+						<cms:input name="lp_email" type="bound" class="form-control" />
+						<div class="gxcpl-ptop-10"></div>
+					</div>
+
+					<div class="col-md-3 col-sm-12 col-xs-12" style="line-height: 34px;">
+						Mobile Number
+						<div class="gxcpl-ptop-10"></div>
+					</div>
+					<div class="col-md-9 col-sm-12 col-xs-12">
+						<cms:input name="lp_mobile" type="bound" class="form-control" />
+						<div class="gxcpl-ptop-10"></div>
+					</div>
+				</div>
+			</div>
+			<div class="gxcpl-card-footer text-center">
+				<button class="btn btn-danger btn-sm" type="submit">
+					<i class="fa fa-send"></i> SEND REQUEST
+				</button>
+			</div>
+		</div>
+	</cms:form>
+<?php COUCH::invoke(); ?>

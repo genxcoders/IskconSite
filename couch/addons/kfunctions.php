@@ -17,6 +17,8 @@ if( defined('K_ADMIN') ){
         global $FUNCS;
         
         $FUNCS->register_admin_menuitem( array('name'=>'_about_', 'title'=>'About', 'is_header'=>'1', 'weight'=>'1')  );
+        $FUNCS->register_admin_menuitem( array('name'=>'_lifepatron_', 'title'=>'Life Patron', 'is_header'=>'1', 'weight'=>'2')  );
+        $FUNCS->register_admin_menuitem( array('name'=>'_campus_', 'title'=>'Campur Outreach', 'is_header'=>'1', 'weight'=>'3')  );
         
     }
 }

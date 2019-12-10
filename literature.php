@@ -17,145 +17,27 @@
 					<h3 class="text-uppercase"><cms:show k_page_title /></h3>
 				</div>
 
+				<cms:pages>
 				<div class="col-md-4">
 					<div class="gxcpl-literature">
 						<div class="gxcpl-book-container">
-							<img class="gxcpl-book-image" src="assets/images/images.jpg">
+							<img class="gxcpl-book-image" src="<cms:show literature_book />">
 						</div>
 						<div class="gxcpl-book-text-container">
-							<h4 class="gxcpl-no-margin">Book Name</h4>
+							<h4 class="gxcpl-no-margin"><cms:show k_page_title /></h4>
 							<div class="gxcpl-ptop-5"></div>
-							<h5 class="text-muted gxcpl-no-margin">Author Full Name</h5>
-							<div class="gxcpl-ptop-5"></div>
+							<h5 class="text-muted gxcpl-no-margin"><cms:show author_name /></h5>
+							<div class="gxcpl-ptop-20"></div>
 							<div class="gxcpl-book-description text-justify">
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
+								<cms:excerptHTML count='30'>
+									<cms:show literature_content />
+								</cms:excerptHTML>
 							</div>
 						</div>
 					</div>
 					<div class="gxcpl-ptop-20"></div>
 				</div>
-
-				<div class="col-md-4">
-					<div class="gxcpl-literature">
-						<div class="gxcpl-book-container">
-							<img class="gxcpl-book-image" src="assets/images/images.jpg">
-						</div>
-						<div class="gxcpl-book-text-container">
-							<h4 class="gxcpl-no-margin">Book Name</h4>
-							<div class="gxcpl-ptop-5"></div>
-							<h5 class="text-muted gxcpl-no-margin">Author Full Name</h5>
-							<div class="gxcpl-ptop-5"></div>
-							<div class="gxcpl-book-description text-justify">
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-							</div>
-						</div>
-					</div>
-					<div class="gxcpl-ptop-20"></div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="gxcpl-literature">
-						<div class="gxcpl-book-container">
-							<img class="gxcpl-book-image" src="assets/images/images.jpg">
-						</div>
-						<div class="gxcpl-book-text-container">
-							<h4 class="gxcpl-no-margin">Book Name</h4>
-							<div class="gxcpl-ptop-5"></div>
-							<h5 class="text-muted gxcpl-no-margin">Author Full Name</h5>
-							<div class="gxcpl-ptop-5"></div>
-							<div class="gxcpl-book-description text-justify">
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-							</div>
-						</div>
-					</div>
-					<div class="gxcpl-ptop-20"></div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="gxcpl-literature">
-						<div class="gxcpl-book-container">
-							<img class="gxcpl-book-image" src="assets/images/images.jpg">
-						</div>
-						<div class="gxcpl-book-text-container">
-							<h4 class="gxcpl-no-margin">Book Name</h4>
-							<div class="gxcpl-ptop-5"></div>
-							<h5 class="text-muted gxcpl-no-margin">Author Full Name</h5>
-							<div class="gxcpl-ptop-5"></div>
-							<div class="gxcpl-book-description text-justify">
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-							</div>
-						</div>
-					</div>
-					<div class="gxcpl-ptop-20"></div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="gxcpl-literature">
-						<div class="gxcpl-book-container">
-							<img class="gxcpl-book-image" src="assets/images/images.jpg">
-						</div>
-						<div class="gxcpl-book-text-container">
-							<h4 class="gxcpl-no-margin">Book Name</h4>
-							<div class="gxcpl-ptop-5"></div>
-							<h5 class="text-muted gxcpl-no-margin">Author Full Name</h5>
-							<div class="gxcpl-ptop-5"></div>
-							<div class="gxcpl-book-description text-justify">
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-								<br>
-								Six lines and 30 words of description
-							</div>
-						</div>
-					</div>
-					<div class="gxcpl-ptop-20"></div>
-				</div>
+				</cms:pages>
 
 			</div>
 		</div>
