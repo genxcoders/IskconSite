@@ -18,7 +18,8 @@ if( defined('K_ADMIN') ){
         
         $FUNCS->register_admin_menuitem( array('name'=>'_about_', 'title'=>'About', 'is_header'=>'1', 'weight'=>'1')  );
         $FUNCS->register_admin_menuitem( array('name'=>'_lifepatron_', 'title'=>'Life Patron', 'is_header'=>'1', 'weight'=>'2')  );
-        $FUNCS->register_admin_menuitem( array('name'=>'_campus_', 'title'=>'Campur Outreach', 'is_header'=>'1', 'weight'=>'3')  );
+        $FUNCS->register_admin_menuitem( array('name'=>'_campus_', 'title'=>'Campus Outreach', 'is_header'=>'1', 'weight'=>'3')  );
+        $FUNCS->register_admin_menuitem( array('name'=>'_media_', 'title'=>'Media', 'is_header'=>'1', 'weight'=>'4')  );
         
     }
 }
